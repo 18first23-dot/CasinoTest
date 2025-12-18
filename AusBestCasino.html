@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Best Australian Online Casinos - Detailed Reviews (2025)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5fb4;
+            --secondary: #e63946;
+            --accent: #f4a261;
+            --light: #f8f9fa;
+            --dark: #2d3748;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+            --header-height: 70px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-top: 1.5rem;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        h3 {
+            font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+            color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1rem);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo {
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .mobile-menu-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+        
+        .mobile-menu-btn span {
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        
+        nav {
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: var(--shadow);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        nav ul li:last-child {
+            border-bottom: none;
+        }
+        
+        nav ul li a {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            font-weight: 500;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a i {
+            margin-right: 12px;
+            width: 20px;
+            text-align: center;
+            color: var(--primary);
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(26, 95, 180, 0.05);
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)), url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: clamp(3rem, 8vw, 5rem) 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: #c1121f;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(230, 57, 70, 0.3);
+        }
+        
+        .btn i {
+            margin-left: 8px;
+        }
+        
+        /* Review Summary Section */
+        .review-summary {
+            background-color: white;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            margin-bottom: 2rem;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .summary-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .summary-icon {
+            background-color: rgba(26, 95, 180, 0.1);
+            color: var(--primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        /* Review Cards */
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        @media (min-width: 768px) {
+            .reviews-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .review-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+        
+        .review-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            z-index: 2;
+        }
+        
+        .review-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            position: relative;
+        }
+        
+        .review-rating {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-right: 10px;
+        }
+        
+        .rating-score {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .review-body {
+            padding: 1.5rem;
+        }
+        
+        .review-section {
+            margin: 1.5rem 0;
+        }
+        
+        .review-section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+        
+        .review-section-title i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .feature-icon {
+            width: 30px;
+            text-align: center;
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        @media (min-width: 480px) {
+            .pros-cons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .pros, .cons {
+            padding: 1rem;
+            border-radius: var(--border-radius);
+        }
+        
+        .pros {
+            background-color: rgba(40, 167, 69, 0.1);
+            border-left: 4px solid var(--success);
+        }
+        
+        .cons {
+            background-color: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid var(--danger);
+        }
+        
+        .pros h4, .cons h4 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .pros h4 i {
+            color: var(--success);
+            margin-right: 8px;
+        }
+        
+        .cons h4 i {
+            color: var(--danger);
+            margin-right: 8px;
+        }
+        
+        .pros ul, .cons ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pros li, .cons li {
+            padding: 0.25rem 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .pros li:before {
+            content: '✓';
+            color: var(--success);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        
+        .cons li:before {
+            content: '✗';
+            color: var(--danger);
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        
+        .review-footer {
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .bonus-box {
+            background-color: rgba(244, 162, 97, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .bonus-title {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.25rem;
+        }
+        
+        /* Comparison Table */
+        .comparison-container {
+            background-color: white;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            margin-bottom: 3rem;
+            overflow-x: auto;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary);
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: var(--light);
+        }
+        
+        .rating-badge {
+            display: inline-block;
+            background-color: var(--success);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow);
+            z-index: 99;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .footer-column h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a i {
+            margin-right: 10px;
+            width: 16px;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .disclaimer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+        }
+        
+        /* Responsive improvements */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero {
+                padding: 2.5rem 0;
+            }
+            
+            .review-header, .review-body, .review-footer {
+                padding: 1.25rem;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        button, .btn, .review-card {
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Jump to review navigation */
+        .jump-nav {
+            display: flex;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+        
+        .jump-nav::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .jump-btn {
+            flex-shrink: 0;
+            background-color: white;
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            margin-right: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+        
+        .jump-btn i {
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .jump-btn:hover, .jump-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Review Tags */
+        .review-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .tag {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        /* Expandable Content */
+        .expandable {
+            max-height: 150px;
+            overflow: hidden;
+            position: relative;
+            transition: max-height 0.5s ease;
+        }
+        
+        .expandable.expanded {
+            max-height: 2000px;
+        }
+        
+        .expand-toggle {
+            display: block;
+            text-align: center;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .expand-toggle i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .expand-toggle.expanded i {
+            transform: rotate(180deg);
+        }
+        
+        /* Payment Methods Icons */
+        .payment-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .payment-icon {
+            background-color: var(--light-gray);
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .payment-icon i {
+            margin-right: 5px;
+        }
+
+        .casino-screenshot {
+    margin: 1rem 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    background: var(--light-gray);
+    border: 1px solid var(--light-gray);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.screenshot-img:hover {
+    transform: scale(1.02);
+}
+
+.screenshot-caption {
+    padding: 0.75rem;
+    background: white;
+    font-size: 0.9rem;
+    color: var(--gray);
+    text-align: center;
+    border-top: 1px solid var(--light-gray);
+    margin: 0;
+}
+
+/* Make expandable sections look better when collapsed */
+.expandable:not(.expanded) {
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.expandable:not(.expanded):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, white);
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice logo-icon"></i>
+                    <div>Aussie<span>CasinoGuide</span></div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#reviews"><i class="fas fa-star"></i> Casino Reviews</a></li>
+                        <li><a href="#comparison"><i class="fas fa-chart-bar"></i> Comparison</a></li>
+                        <li><a href="#summary"><i class="fas fa-clipboard-check"></i> Testing Summary</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Best Australian Online Casinos - Detailed Reviews</h1>
+            <p>These reviews break down how each casino performs in real-world testing, covering pokie quality, payout speed, safety standards, and bonuses. Every site listed here accepts Aussies and supports fast, secure AUD banking.</p>
+            <a href="#reviews" class="btn">Read Reviews <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Testing Summary -->
+        <section class="review-summary" id="summary">
+            <h2>Real-World Testing Results</h2>
+            <p>Our team spent over 200 hours testing these casinos for Australian players. Here's what we evaluated:</p>
+            
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-slot-machine"></i>
+                    </div>
+                    <div>
+                        <h3>Pokie Quality</h3>
+                        <p>Tested game variety, RTP percentages, graphics quality, and mobile compatibility.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h3>Payout Speed</h3>
+                        <p>Measured withdrawal processing times for PayID, bank transfer, and cryptocurrency.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Safety Standards</h3>
+                        <p>Verified licensing, encryption, responsible gambling tools, and fair gaming certifications.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div>
+                        <h3>Bonus Value</h3>
+                        <p>Assessed welcome offers, wagering requirements, and ongoing promotions for Aussie players.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Jump Navigation -->
+        <div class="jump-nav" id="jumpNav">
+            <!-- Navigation buttons will be added by JavaScript -->
+        </div>
+
+        <!-- Casino Reviews -->
+        <section id="reviews">
+            <h2>Detailed Casino Reviews</h2>
+            <p>Each casino was tested with real money deposits and withdrawals. Ratings are based on Australian player experience.</p>
+            
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Review cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="comparison-container" id="comparison">
+            <h2>Casino Comparison Table</h2>
+            <p>Quickly compare key features of all reviewed casinos for Australian players.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Casino</th>
+                            <th>Best For</th>
+                            <th>Rating</th>
+                            <th>Welcome Bonus</th>
+                            <th>Withdrawal Time</th>
+                            <th>Pokie Count</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparisonTableBody">
+                        <!-- Comparison rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Final Recommendation -->
+        <section class="review-summary">
+            <h2>Our Top Recommendations for Aussie Players</h2>
+            
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-icon" style="background-color: rgba(40, 167, 69, 0.1); color: var(--success);">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h3>Best Overall: NeoSpin</h3>
+                        <p>Excellent all-rounder with great pokies, fast PayID withdrawals, and top-notch security. Perfect for both new and experienced players.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon" style="background-color: rgba(244, 162, 97, 0.1); color: var(--accent);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Best Mobile: VegasNow</h3>
+                        <p>Smooth mobile experience with a massive bonus package. Great for playing on the go.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon" style="background-color: rgba(26, 95, 180, 0.1); color: var(--primary);">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h3>Fastest Payouts: SkyCrown</h3>
+                        <p>PayID withdrawals processed in under 2 hours on average. Perfect if you want quick access to winnings.</p>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <div class="summary-icon" style="background-color: rgba(220, 53, 69, 0.1); color: var(--danger);">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div>
+                        <h3>Best Game Variety: LuckyOnes</h3>
+                        <p>Over 5,000 games including pokies, table games, and live dealers. Something for every type of player.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem; padding: 1.5rem; background-color: rgba(26, 95, 180, 0.05); border-radius: var(--border-radius);">
+                <h3><i class="fas fa-exclamation-circle"></i> Important Testing Note</h3>
+                <p>All casinos were tested with real AUD deposits and withdrawals. While these casinos accept Australian players, remember that online gambling laws vary by state/territory. Always gamble responsibly and only with money you can afford to lose.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>AussieCasinoGuide</h4>
+                    <p>Your trusted source for unbiased Australian online casino reviews and guides since 2020.</p>
+                    <p>All reviews are based on real testing with AUD deposits and withdrawals.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Review Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#reviews"><i class="fas fa-chevron-right"></i> All Casino Reviews</a></li>
+                        <li><a href="index.html#top-casinos"><i class="fas fa-chevron-right"></i> Top Casinos 2025</a></li>
+                        <li><a href="index.html#payment"><i class="fas fa-chevron-right"></i> Payment Methods</a></li>
+                        <li><a href="index.html#safety"><i class="fas fa-chevron-right"></i> Safety Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Responsible Gambling</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.gamblinghelponline.org.au/" target="_blank"><i class="fas fa-external-link-alt"></i> Gambling Help Online</a></li>
+                        <li><a href="https://www.responsiblegambling.vic.gov.au/" target="_blank"><i class="fas fa-external-link-alt"></i> Responsible Gambling Vic</a></li>
+                        <li><a href="https://www.moneysmart.gov.au/gambling" target="_blank"><i class="fas fa-external-link-alt"></i> MoneySmart Gambling Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> Gambling involves risk. Please only gamble with funds you can afford to lose. The information on this site is for entertainment purposes only. Online gambling may not be legal in your jurisdiction; please check local laws. Must be 18+ to participate.</p>
+                <p style="margin-top: 1rem;">&copy; 2025 AussieCasinoGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Review data with your provided information
+        const reviewData = [
+            {
+                id: "neospin",
+                name: "NeoSpin",
+                tagline: "Best Overall Online Casino Australia for Real Money Pokies",
+                rating: 9.9,
+                bonus: "Up to AU$11,000 + 300 Free Spins",
+                withdrawalTime: "1-4 hours (PayID), Minutes (Crypto)",
+                pokieCount: "Thousands",
+                screenshot: "Images/SS1.PNG",
+                gamesSoftware: "You get thousands of pokies from Pragmatic Play, BGaming, Play'n GO, and other long-time favourites. The layout is clean, and mobile sessions feel smooth even when you jump between games. Crash titles and a straightforward live casino section round out the offering if you want something other than reels.",
+                securitySystems: "NeoSpin operates under a Curaçao licence and maintains transparency. RTP figures, game restrictions, and bonus rules are easy to find. Larger withdrawals trigger standard KYC checks, but nothing out of the ordinary. Encryption and account protection are solid.",
+                bonusesPromotions: `The welcome deal lands in four steps:
+                1. 100% up to AU$1,500 + 100 FS
+                2. 100% up to AU$2,000 + 25 FS
+                3. 75% up to AU$2,500 + 75 FS
+                4. 25% up to AU$5,000 + 100 FS
+                
+                High rollers get a 125% bonus plus weekly cashback. Regular players receive daily cashback ranging from 5% to 20%. There are free spins on Wednesdays, a weekend reload, and a 16-level VIP ladder with real rewards. Most offers require 40x wagering and a low maximum bet limit.`,
+                paymentMethods: "Visa, Mastercard, MiFinity, and a long list of cryptocurrencies (BTC, ETH, USDT, LTC, DOGE, XRP, BCH) are accepted here. Deposits are instant. Crypto withdrawals usually land within minutes. Bank transfers take longer and come with a fee.",
+                pros: [
+                    "Huge pokies choice",
+                    "Steady cashback",
+                    "Fast crypto cashouts"
+                ],
+                cons: [
+                    "High minimum bank transfer",
+                    "Strict wagering limits"
+                ],
+                bestFor: "Aussies who want fast payments and plenty to play"
+                
+            },
+            {
+                id: "vegasnow",
+                name: "VegasNow",
+                tagline: "Best for Big Bonuses & Smooth Mobile Play",
+                rating: 9.8,
+                 screenshot: "Images/SS2.PNG",
+                bonus: "Up to AU$8,000 + 500 Free Spins",
+                withdrawalTime: "4-12 hours",
+                pokieCount: "2,200+",
+                gamesSoftware: "VegasNow appears designed for people who want straightforward entertainment without a cluttered interface. The game lobby loads quickly, and switching between pokies, blackjack, roulette, and specialty titles is simple enough even on mobile. The site doesn't push live casino tables heavily, but the RNG collection covers most of what everyday players look for.",
+                securitySystems: "The terms are strict but straightforward. VegasNow allows only one account per person, enforces an 18+ policy, and blocks sign-ups from restricted countries. Verification is required before withdrawals. They're substantial on anti-fraud rules: no VPN shortcuts, no third-party deposits, and no bonus-clearing tricks.",
+                bonusesPromotions: `The bonus lineup is the biggest draw here:
+                1. 150% up to $1,500 + 200 free spins (first deposit)
+                2. 200% extra + 60-day VIP trial for high-rollers
+                3. 100% up to $2,000 + 50 spins (second deposit)
+                4. 50% up to $2,000 + 50 spins (third deposit)
+                
+                Wagering is usually 40x, with max bet caps and a seven-day window.`,
+                paymentMethods: "Deposits start from 30 AUD, and crypto users get BTC, ETH, LTC, DOGE, ADA, XRP, and more. Withdrawals begin at €20, with limits tied to your level and payment type.",
+                pros: [
+                    "Huge bonus stack",
+                    "Wide crypto support"
+                ],
+                cons: [
+                    "Strict bonus rules",
+                    "Limited live casino"
+                ],
+                bestFor: "Players who enjoy big, structured bonuses"
+            },
+            {
+                id: "skycrown",
+                name: "SkyCrown",
+                tagline: "Best for Fast PayID Withdrawals",
+                rating: 9.8,
+                 screenshot: "Images/SS3.PNG",
+                bonus: "Up to AU$8,000 + 400 Free Spins",
+                withdrawalTime: "Minutes (PayID), 1-3 hours (Crypto)",
+                pokieCount: "6,000+",
+                gamesSoftware: "SkyCrown leans heavily into variety with over 6,000 games. The pokie portfolio is enormous, and the live casino table is filled with all the standard favourites: roulette, blackjack, baccarat, and some niche game shows. Powered by trusted software vendors, the platform delivers fast loading times and a clean in-game experience on both desktop and mobile.",
+                securitySystems: "The casino holds a Curacao licence and sets standards for fairness, responsible gambling, and account verification. Standard encryption is applied to payments and personal data, and withdrawals will not be processed until your ID is verified.",
+                bonusesPromotions: "The core attraction is the four-part welcome package that includes up to 8,000 + 400 free spins on your initial deposits. Weekly reloads and cashbacks provide regular players with consistent rewards. The VIP program is tier-based, with better perks and higher point conversion rates as you move up tiers.",
+                paymentMethods: "Players can use Visa, Mastercard, PayID, MiFinity, or several crypto options through CoinsPaid. Deposits are instant. Crypto withdrawals tend to clear the fastest, while card and bank payouts may take longer depending on your provider.",
+                pros: [
+                    "Huge game range",
+                    "Fast PayID and crypto payouts",
+                    "Clean interface"
+                ],
+                cons: [
+                    "Lighter regulation",
+                    "Long bonus terms",
+                    "Some payout delays"
+                ],
+                bestFor: "Aussies who want a wide variety and quick cashouts"
+            },
+            {
+                id: "spinsup",
+                name: "SpinsUp",
+                tagline: "Best for Jackpots & High-RTP Pokies",
+                rating: 9.7,
+                 screenshot: "Images/SS4.PNG",
+                bonus: "Up to AU$5,000 + 300 Free Spins",
+                withdrawalTime: "1-3 days (Cards), Faster (Crypto)",
+                pokieCount: "2,500+",
+                gamesSoftware: "SpinsUp is built for pokies fans with 2,500+ titles, including high-RTP classics and new, feature-rich releases, as well as table games and live rooms. There are specific categories, and one can filter by volatility, features, or themes, making it easy to find jackpot options such as Golden Dragon Inferno.",
+                securitySystems: "SpinsUp is built on offshore licensing, and established studios verify full-site SSL encryption and RNG software. KYC, anti-fraud checks, and responsible gambling tools are detailed, including deposit, loss, wager, and session limits; self-exclusion; and cooling-off options.",
+                bonusesPromotions: "The main offer is an AU$5,000 welcome package + 300 free spins on your initial deposits. SpinsUp runs weekly reloads, free-spin specials, and regular tournaments. Deposits need to be wagered several times, and bonus rules can be strict.",
+                paymentMethods: "You can load using Visa, Mastercard, Apple Pay, MiFinity, PayID, and cryptocurrencies such as BTC, ETH, LTC, BCH, DOGE, and USDT. Deposits are fee-free and instant from AU$30. Card withdrawals take 1-3 banking days, bank transfers take 3-5 banking days, while crypto cashouts are usually much faster.",
+                pros: [
+                    "Strong jackpots and high RTP lineup",
+                    "Handy game filters",
+                    "Frequent promotions",
+                    "Generous welcome package"
+                ],
+                cons: [
+                    "Live dealer section is thin",
+                    "Site design feels basic",
+                    "Payout speeds lag behind fastest casinos"
+                ],
+                bestFor: "Pokies-first players who care about structure and steady promos"
+            },
+            {
+                id: "wildtokyo",
+                name: "Wild Tokyo",
+                tagline: "Best for Big-Payout Libraries & Table Games",
+                rating: 9.6,
+                 screenshot: "Images/SS5.PNG",
+                bonus: "Up to AU$5,300 + 600 Free Spins",
+                withdrawalTime: "24-48 hours",
+                pokieCount: "8,000+",
+                gamesSoftware: "Wild Tokyo focuses on volume with 8,000+ games from major studios including NetEnt, Pragmatic Play, Evolution, and Playtech. The slots predominate with new, popular, and jackpot filters, and the live lobby includes roulette, blackjack, baccarat, gameshows, and regular RNG tables.",
+                securitySystems: "Wild Tokyo is Curacao licensed and fully encrypted with SSL. Clear privacy policy and KYC checks are supported. Players may request cooling-off and self-exclusion, as well as set deposit, loss, and session limits. 24/7 support via email and live chat available.",
+                bonusesPromotions: "The welcome deal in Australia covers three deposits and can amount to up to AU$2,000 and 250 free spins. Trade-off is 50x bet on bonus funds and spins, seven days to clear, and only slots are counted 100%. Promotions include 20% Monday cashback, weekly and weekend reloads, and a five-level VIP program.",
+                paymentMethods: "Banking covers cards, e-wallets, bank transfers, and major cryptos. Deposits start at €20 and are fee-free. Withdrawals begin at €20 (or €50 for crypto and €100 for wire), limited to €500 per day and €15,000 per month. Cashouts usually approved within 24-48 hours and paid within 1-5 banking days.",
+                pros: [
+                    "Huge lobby",
+                    "Strong live casino",
+                    "Broad language and currency support"
+                ],
+                cons: [
+                    "3x deposit wagering before free withdrawals",
+                    "Modest limits",
+                    "High 50x rollover"
+                ],
+                bestFor: "Players who value variety over minimalism"
+            },
+            {
+                id: "luckyones",
+                name: "LuckyOnes",
+                tagline: "Best for Massive Game Libraries & Responsive Support",
+                rating: 9.4,
+                 screenshot: "Images/SS7.PNG",
+                bonus: "Up to AU$20,000 + 500 Free Spins",
+                withdrawalTime: "Within 24 hours",
+                pokieCount: "12,000+",
+                gamesSoftware: "LuckyOnes stands out for scale with more than 14,000 games from 90+ studios. Big developers like Pragmatic Play, BGaming, Playtech, and Hacksaw sit alongside smaller studios. Highlights include Sweet Bonanza, Gates of Olympus, and Wanted Dead or Alive, while the live section leans heavily on Pragmatic Play Live.",
+                securitySystems: "The casino runs under a Curaçao licence via Dama N.V. SSL encryption protects payments and personal data, and games use certified RNG technology. Responsible gaming tools are built in, including limits and self-exclusion. A chatbot handles some support features before reaching a human.",
+                bonusesPromotions: "The welcome package is massive: AU$20,000 match + 500 spins spread across four deposits. Weekly and monthly promos keep things busy with Wednesday Wealth reloads, Friday free spins, and rotating prize drops. Cashback on rooftop roulette and live-play rewards add extra value, though 40x wagering requirement is on higher end.",
+                paymentMethods: "Flexible banking with Visa, Mastercard, Interac, MiFinity, Neosurf, MuchBetter, Jeton, Flexepin, and broad crypto lineup including BTC, ETH, LTC, XRP, ADA, DOGE, TRON, BCH, and USDT. Deposits land instantly, withdrawals usually clear within 24 hours.",
+                pros: [
+                    "Huge game library",
+                    "Strong crypto support",
+                    "Frequent promos",
+                    "24/7 chat"
+                ],
+                cons: [
+                    "Daily win cap",
+                    "No mobile app",
+                    "Chatbot-heavy support",
+                    "40x wagering"
+                ],
+                bestFor: "Players who want nonstop content and fast crypto banking"
+            },
+            {
+                id: "betninja",
+                name: "BetNinja",
+                tagline: "Best for Casino + Sportsbook Combo",
+                rating: 9.3,
+                 screenshot: "Images/SS8.PNG",
+                bonus: "Up to AU$2,500 + 100 Free Spins",
+                withdrawalTime: "Within 24 hours, Minutes (Crypto)",
+                pokieCount: "2,000+",
+                gamesSoftware: "BetNinja leans into its ninja theme without getting gimmicky. Behind the dark green lobby, you get a solid library of 2,000+ games from heavy hitters like Pragmatic Play, NetEnt, Games Global, Nolimit City, Evolution, Red Tiger, Relax, Wazdan, and more. Filters by provider and category make navigation easy.",
+                securitySystems: "Operates under an Anjouan licence and runs SSL encryption across the site. Payments are processed through PCI-compliant gateways, and RNG titles come from vetted studios. KYC checks are mandatory for cashouts. Basic responsible-gambling tools including limits and self-exclusion are in place.",
+                bonusesPromotions: "New players start with a 100% match bonus plus 100 free spins spread over the first deposit, followed by more minor boosts on second and third. Wagering is 30x bonus plus deposit. Ongoing perks are mostly ad hoc reloads or goodwill bonuses sent by email or through support.",
+                paymentMethods: "Visa, Mastercard, Apple Pay, Google Pay, Interac, Revolut, MiFinity, bank transfers, and crypto options such as Bitcoin, Ethereum, Litecoin, XRP, Tether, and Dogecoin. Deposits are instant, withdrawals usually processed within 24 hours; crypto often reaches wallets in minutes after approval.",
+                pros: [
+                    "Fast crypto payouts",
+                    "Good mix of fiat and crypto",
+                    "Clean mobile site",
+                    "Strong slot lineup"
+                ],
+                cons: [
+                    "Weak ongoing promos",
+                    "No clear VIP ladder",
+                    "Anjouan licence is less stringent"
+                ],
+                bestFor: "Players who want both pokies and betting markets under one roof"
+            },
+            {
+                id: "goldencrown",
+                name: "GoldenCrown",
+                tagline: "Best for Versatile Game Variety & Big Bonuses",
+                rating: 9.2,
+                 screenshot: "Images/SS9.PNG",
+                bonus: "100% up to $15,000 + 300 Free Spins",
+                withdrawalTime: "Near-instant (Crypto), 1-5 days (Bank)",
+                pokieCount: "6,500+",
+                gamesSoftware: "GoldenCrown features around 6,500 games including pokies, jackpots, blackjack, roulette, baccarat, video poker, bingo, scratchcards, crash titles, and a large live casino. You can sort by 'Popular', 'New', 'Bonus Buy', 'Crypto Games', or filter by studio. Providers include Microgaming, NetEnt, Play'n GO, Yggdrasil, Pragmatic Play, Hacksaw, BGaming, and more.",
+                securitySystems: "Hollycorn N.V. runs the site under a Curacao licence. Traffic is encrypted via SSL, and you're limited to one account per person. Live dealer tables come from trusted studios such as Evolution and Ezugi, and RNG games are tested for randomness. Tools for limits and self-exclusion are available.",
+                bonusesPromotions: "New players can claim a first-deposit match with high cap for Aussies, plus 300 free spins spread over 10 days. Weekend reloads reach 50% up to sizeable amounts, and Wednesdays feature code-based free spins. Regular tournaments and 'Drops & Wins' events add extra prize pools. 40x wagering with $2 max bet rule during playthrough.",
+                paymentMethods: "Flexible banking: Visa, Mastercard, Interac, ecoPayz, bank transfers, and crypto including BTC, BCH, DOGE, ETH, LTC, USDT, and XRP. Deposits usually instant. Crypto withdrawals fee-free and near-instant once approved; bank transfers take longer.",
+                pros: [
+                    "Huge 6,500+ game library",
+                    "Big welcome bonus with lots of free spins",
+                    "Strong crypto support and fast payouts",
+                    "Well-built mobile and app experience"
+                ],
+                cons: [
+                    "No no-deposit bonus",
+                    "40x wagering plus low max bet on bonuses",
+                    "Country restrictions for several major regions"
+                ],
+                bestFor: "Pokies fans and table-game players alike"
+            },
+            {
+                id: "rollero",
+                name: "Rollero",
+                tagline: "Best for Simple, Reliable Real-Money Pokies",
+                rating: 9.2,
+                 screenshot: "Images/SS10.PNG",
+                bonus: "Up to AU$7,500 + 300 Free Spins",
+                withdrawalTime: "Hours (E-wallet/Crypto), 3-7 days (Bank)",
+                pokieCount: "10,000+",
+                gamesSoftware: "Rollero feels built for people who like options with 10,000+ games from 130+ studios including Pragmatic Play, NetEnt, Play'n GO, Yggdrasil, Nolimit City, Playtech, and BGaming. Slots dominate with Megaways, Hold & Win, Bonus Buy, and jackpot titles. Deep live casino from Evolution, Pragmatic Play Live, Ezugi, plus instant-win games and crash titles.",
+                securitySystems: "Runs under Curacao Gambling Control Board via Hollycorn N.V. SSL encryption protects account and payment data, full KYC required before large cashouts. Games come from certified providers tested by labs such as GLI, BMM, or eCOGRA. Account tools for limits and self-exclusion easy to find.",
+                bonusesPromotions: "Four-step welcome package worth up to AU$7,500 plus 300 free spins with 40x wagering on bonus only. Regulars get weekday reloads, free-spin bundles, and Sunday spins promo. Bonus store lets you earn points while playing and swap them for bonus cash, spins, or gadgets. 10-level VIP ladder adds level-up cash and up to 20% daily cashback.",
+                paymentMethods: "Supports PayID-style instant transfers, bank cards, Interac, iDebit, MiFinity, MuchBetter, Skrill, Neteller, ecoPayz, Paysafecard, and exhaustive crypto range (BTC, ETH, LTC, USDT, XRP, BNB, ADA, TRX, and more). Minimum deposits/withdrawals start at €20 or AU$30.",
+                pros: [
+                    "10,000+ games and 130+ providers",
+                    "Big fiat and crypto-friendly welcome package",
+                    "Bonus shop and clear VIP cashback ladder",
+                    "Fast e-wallet and crypto withdrawals"
+                ],
+                cons: [
+                    "Bonuses expire after 3 days",
+                    "3x deposit turnover before free withdrawals",
+                    "Live casino excluded from bonus wagering"
+                ],
+                bestFor: "Players who prefer straightforward gaming without clutter"
+            }
+        ];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            populateReviewCards();
+            populateComparisonTable();
+            populateJumpNav();
+            setupMobileMenu();
+            setupBackToTop();
+            setupExpandableContent();
+        });
+
+        // Create review cards
+        function populateReviewCards() {
+            const container = document.getElementById('reviewsContainer');
+            container.innerHTML = '';
+            
+            reviewData.forEach(review => {
+                const card = document.createElement('div');
+                card.className = 'review-card';
+                card.id = review.id;
+                
+                // Create stars HTML
+                const starsCount = Math.floor(review.rating);
+                let starsHTML = '';
+                for (let i = 0; i < 5; i++) {
+                    if (i < starsCount) {
+                        starsHTML += '<i class="fas fa-star"></i>';
+                    } else {
+                        starsHTML += '<i class="far fa-star"></i>';
+                    }
+                }
+                
+                card.innerHTML = `
+    <div class="review-badge">${review.rating}/10</div>
+    <div class="review-header">
+        <h3>${review.name}</h3>
+        <p style="opacity: 0.9;">${review.tagline}</p>
+        <div class="review-rating">
+            <div class="stars">${starsHTML}</div>
+            <div class="rating-score">${review.rating}/10</div>
+        </div>
+    </div>
+    <div class="review-body">
+        <!-- CASINO HOMEPAGE SCREENSHOT -->
+        <div class="review-section">
+            <div class="casino-screenshot">
+                <img src="${review.screenshot}" alt="${review.name} Homepage" class="screenshot-img">
+                <p class="screenshot-caption">${review.name} homepage interface</p>
+            </div>
+        </div>
+        
+        <div class="review-section">
+            <h4 class="review-section-title"><i class="fas fa-gamepad"></i> Games & Software</h4>
+            <div class="expandable" id="games-${review.id}">
+                <p>${review.gamesSoftware}</p>
+            </div>
+           
+        </div>
+        
+        <div class="review-section">
+            <h4 class="review-section-title"><i class="fas fa-shield-alt"></i> Security Systems</h4>
+            <div class="expandable" id="security-${review.id}">
+                <p>${review.securitySystems}</p>
+            </div>
+            
+        </div>
+        
+        <div class="review-section">
+            <h4 class="review-section-title"><i class="fas fa-gift"></i> Bonuses & Promotions</h4>
+            <div class="expandable" id="bonuses-${review.id}">
+                <p style="white-space: pre-line;">${review.bonusesPromotions}</p>
+            </div>
+            
+        </div>
+        
+        <div class="review-section">
+            <h4 class="review-section-title"><i class="fas fa-credit-card"></i> Payment Methods</h4>
+            <div class="expandable" id="payments-${review.id}">
+                <p>${review.paymentMethods}</p>
+            </div>
+            
+        </div>
+        
+        <div class="pros-cons">
+            <div class="pros">
+                <h4><i class="fas fa-plus-circle"></i> Pros</h4>
+                <ul>
+                    ${review.pros.map(pro => `<li>${pro}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="cons">
+                <h4><i class="fas fa-minus-circle"></i> Cons</h4>
+                <ul>
+                    ${review.cons.map(con => `<li>${con}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+        
+        <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(26, 95, 180, 0.05); border-radius: var(--border-radius);">
+            <strong><i class="fas fa-user-check"></i> Best For:</strong> ${review.bestFor}
+        </div>
+    </div>
+    <div class="review-footer">
+        <div class="bonus-box">
+            <div class="bonus-title">Welcome Bonus</div>
+            <div>${review.bonus}</div>
+        </div>
+        <button class="btn" style="width: 100%;" onclick="alert('Visit ' + '${review.name}' + ' casino to claim bonus')">Claim Bonus at ${review.name}</button>
+    </div>
+`;
+                
+                container.appendChild(card);
+            });
+        }
+
+        // Create comparison table
+        function populateComparisonTable() {
+            const tableBody = document.getElementById('comparisonTableBody');
+            tableBody.innerHTML = '';
+            
+            reviewData.forEach(review => {
+                const row = document.createElement('tr');
+                
+                // Determine rating badge color
+                let ratingStyle = "background-color: var(--success);";
+                if (review.rating >= 9.5) {
+                    ratingStyle = "background-color: var(--success);";
+                } else if (review.rating >= 9.0) {
+                    ratingStyle = "background-color: var(--accent);";
+                } else {
+                    ratingStyle = "background-color: var(--warning); color: var(--dark);";
+                }
+                
+                row.innerHTML = `
+                    <td><strong><a href="#${review.id}">${review.name}</a></strong></td>
+                    <td>${review.tagline.split(': ')[1] || review.tagline}</td>
+                    <td><span class="rating-badge" style="${ratingStyle}">${review.rating}/10</span></td>
+                    <td>${review.bonus}</td>
+                    <td>${review.withdrawalTime}</td>
+                    <td>${review.pokieCount}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Create jump navigation
+        function populateJumpNav() {
+            const navContainer = document.getElementById('jumpNav');
+            navContainer.innerHTML = '';
+            
+            reviewData.forEach(review => {
+                const button = document.createElement('button');
+                button.className = 'jump-btn';
+                button.innerHTML = `<i class="fas fa-dice"></i> ${review.name}`;
+                button.addEventListener('click', function() {
+                    // Update active button
+                    document.querySelectorAll('.jump-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Scroll to review
+                    const element = document.getElementById(review.id);
+                    if (element) {
+                        window.scrollTo({
+                            top: element.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+                
+                navContainer.appendChild(button);
+            });
+        }
+
+        // Mobile menu functionality
+        function setupMobileMenu() {
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('mainNav');
+            
+            menuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+                
+                // Close menu when clicking on a link
+                if (nav.classList.contains('active')) {
+                    const navLinks = nav.querySelectorAll('a');
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', function() {
+                            menuBtn.classList.remove('active');
+                            nav.classList.remove('active');
+                        });
+                    });
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!menuBtn.contains(event.target) && !nav.contains(event.target) && nav.classList.contains('active')) {
+                    menuBtn.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+        }
+
+        // Expandable content functionality
+       function setupExpandableContent() {
+    // Initially collapse all expandable sections
+    setTimeout(() => {
+        document.querySelectorAll('.expandable').forEach(section => {
+            section.classList.remove('expanded'); // REMOVE expanded class initially
+            const toggleBtn = section.nextElementSibling;
+            if (toggleBtn && toggleBtn.classList.contains('expand-toggle')) {
+                toggleBtn.classList.remove('expanded'); // REMOVE expanded class
+                toggleBtn.innerHTML = 'Read more <i class="fas fa-chevron-down"></i>';
+            }
+        });
+    }, 100);
+    
+    // Add click handlers
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('expand-toggle')) {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.classList.toggle('expanded');
+                event.target.classList.toggle('expanded');
+                
+                if (targetElement.classList.contains('expanded')) {
+                    event.target.innerHTML = 'Show less <i class="fas fa-chevron-up"></i>';
+                } else {
+                    event.target.innerHTML = 'Read more <i class="fas fa-chevron-down"></i>';
+                }
+            }
+        }
+    });
+}
+
+        // Back to top button
+        function setupBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+                
+                // Update active jump button
+                const scrollPos = window.pageYOffset + 150;
+                const reviewCards = document.querySelectorAll('.review-card');
+                let activeId = null;
+                
+                reviewCards.forEach(card => {
+                    if (card.offsetTop <= scrollPos) {
+                        activeId = card.id;
+                    }
+                });
+                
+                if (activeId) {
+                    document.querySelectorAll('.jump-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.textContent.includes(reviewData.find(r => r.id === activeId).name)) {
+                            btn.classList.add('active');
+                        }
+                    });
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                // Skip if it's an external link
+                if (href === '#' || href.startsWith('#') === false) return;
+                
+                e.preventDefault();
+                
+                const targetId = href;
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const menuBtn = document.getElementById('mobileMenuBtn');
+                    const nav = document.getElementById('mainNav');
+                    
+                    if (nav.classList.contains('active')) {
+                        menuBtn.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                    
+                    // Scroll to element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize first jump button as active
+        setTimeout(() => {
+            const firstJumpBtn = document.querySelector('.jump-btn');
+            if (firstJumpBtn) {
+                firstJumpBtn.classList.add('active');
+            }
+        }, 500);
+    </script>
+</body>
+</html>

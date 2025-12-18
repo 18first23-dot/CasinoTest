@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Complete Australian Online Casino Guide - Bonuses, Games & Safety (2025)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5fb4;
+            --secondary: #e63946;
+            --accent: #f4a261;
+            --light: #f8f9fa;
+            --dark: #2d3748;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+            --header-height: 70px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--primary);
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-top: 2rem;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        h3 {
+            font-size: clamp(1.3rem, 3.5vw, 1.5rem);
+            color: var(--secondary);
+            margin-top: 1.5rem;
+        }
+        
+        h4 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: clamp(0.95rem, 2.5vw, 1rem);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo {
+            font-size: clamp(1.3rem, 4vw, 1.8rem);
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .mobile-menu-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+        
+        .mobile-menu-btn span {
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        
+        nav {
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: var(--shadow);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        nav ul li:last-child {
+            border-bottom: none;
+        }
+        
+        nav ul li a {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            font-weight: 500;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a i {
+            margin-right: 12px;
+            width: 20px;
+            text-align: center;
+            color: var(--primary);
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(26, 95, 180, 0.05);
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)), url('https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: clamp(3rem, 8vw, 5rem) 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: #c1121f;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(230, 57, 70, 0.3);
+        }
+        
+        .btn i {
+            margin-left: 8px;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background-color: white;
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            margin-bottom: 2rem;
+        }
+        
+        /* Table Styles */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .info-table {
+                display: table;
+            }
+        }
+        
+        .info-table th {
+            background-color: var(--primary);
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        
+        .info-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .info-table tr:nth-child(even) {
+            background-color: var(--light);
+        }
+        
+        .info-table tr:hover {
+            background-color: rgba(26, 95, 180, 0.05);
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .feature-item {
+            background-color: var(--light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .feature-item h4 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-item h4 i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        /* Bonus Types Grid */
+        .bonus-types {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .bonus-types {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .bonus-types {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .bonus-type {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-light);
+            border-top: 4px solid var(--primary);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .bonus-type:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        
+        .bonus-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* List Styles */
+        ul.content-list, ol.content-list {
+            padding-left: 1.5rem;
+            margin: 1rem 0 1.5rem;
+        }
+        
+        ul.content-list li, ol.content-list li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background-color: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid var(--warning);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box h4 {
+            color: var(--warning);
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+        }
+        
+        .warning-box h4 i {
+            margin-right: 10px;
+        }
+        
+        /* Info Box */
+        .info-box {
+            background-color: rgba(26, 95, 180, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+        
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 1.5rem;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Payment Methods */
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .payment-method {
+            background-color: white;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            min-width: 200px;
+            transition: var(--transition);
+        }
+        
+        .payment-method:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-light);
+        }
+        
+        .payment-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 1rem;
+            width: 40px;
+            text-align: center;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow);
+            z-index: 99;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Quick Navigation */
+        .quick-nav {
+            display: flex;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            position: sticky;
+            top: var(--header-height);
+            background: white;
+            z-index: 99;
+            padding: 1rem 0;
+        }
+        
+        .quick-nav::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .quick-nav-btn {
+            flex-shrink: 0;
+            background-color: white;
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            margin-right: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+        
+        .quick-nav-btn i {
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .quick-nav-btn:hover, .quick-nav-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .footer-column h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a i {
+            margin-right: 10px;
+            width: 16px;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .disclaimer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+        }
+        
+        /* Responsive improvements */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero {
+                padding: 2.5rem 0;
+            }
+            
+            .content-section {
+                padding: 1.25rem;
+            }
+            
+            .payment-method {
+                min-width: 100%;
+            }
+            
+            .quick-nav {
+                padding: 0.75rem 0;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        button, .btn, .quick-nav-btn {
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary), #0d47a1);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .highlight-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dice logo-icon"></i>
+                    <div>Aussie<span>CasinoGuide</span></div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="reviews.html"><i class="fas fa-star"></i> Reviews</a></li>
+                        <li><a href="#bonuses"><i class="fas fa-gift"></i> Bonuses</a></li>
+                        <li><a href="#games"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="#banking"><i class="fas fa-credit-card"></i> Banking</a></li>
+                        <li><a href="#safety"><i class="fas fa-shield-alt"></i> Safety</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Complete Australian Online Casino Guide</h1>
+            <p>Everything you need to know about bonuses, games, banking, safety, and strategies for playing at Australian-friendly online casinos in 2025.</p>
+            <a href="#bonuses" class="btn">Start Learning <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <div class="container">
+        <div class="quick-nav" id="quickNav">
+            <button class="quick-nav-btn" data-target="#bonuses"><i class="fas fa-gift"></i> Bonuses</button>
+            <button class="quick-nav-btn" data-target="#games"><i class="fas fa-gamepad"></i> Games</button>
+            <button class="quick-nav-btn" data-target="#banking"><i class="fas fa-credit-card"></i> Banking</button>
+            <button class="quick-nav-btn" data-target="#safety"><i class="fas fa-shield-alt"></i> Safety</button>
+            <button class="quick-nav-btn" data-target="#strategies"><i class="fas fa-lightbulb"></i> Strategies</button>
+            <button class="quick-nav-btn" data-target="#faq"><i class="fas fa-question-circle"></i> FAQ</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Bonuses Section -->
+        <section class="content-section" id="bonuses">
+            <h2>Casino Bonuses at Online Casino Australia Sites</h2>
+            <p>Bonuses shape the way Aussies play at offshore casinos. They stretch your balance, unlock free spins, and create more chances to test new pokies without extra cost. Because these casinos operate outside Australian borders, players get access to larger offers than any local venue could legally provide. This section breaks down how those bonuses work and what to look for before claiming them.</p>
+            
+            <h3>How Online Casino Bonuses Work in Australia</h3>
+            <p>Deposit matches, free spins, and cashback are the core structures. When you make a deposit, the casino boosts your balance by a specified percentage. Free spins attach to specific pokies and convert into bonus funds that you must wager. Cashback returns a percentage of losses, helping soften sessions that don't go your way.</p>
+            
+            <p>Below are the most common bonus types you'll see and how to evaluate them.</p>
+            
+            <div class="bonus-types">
+                <div class="bonus-type">
+                    <div class="bonus-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h4>Welcome Bonuses</h4>
+                    <p>Main attractions for new players, usually spread across multiple deposits with match bonuses and free spins.</p>
+                </div>
+                
+                <div class="bonus-type">
+                    <div class="bonus-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h4>No-Deposit Bonuses</h4>
+                    <p>Let you try casinos before adding money. Rare but appealing with no risk involved.</p>
+                </div>
+                
+                <div class="bonus-type">
+                    <div class="bonus-icon">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <h4>Reload Bonuses</h4>
+                    <p>Reward returning players with extra match percentages on later deposits.</p>
+                </div>
+                
+                <div class="bonus-type">
+                    <div class="bonus-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h4>Cashback Offers</h4>
+                    <p>Return a portion of net losses over a day or week, often with minimal wagering requirements.</p>
+                </div>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-crown"></i> VIP and Loyalty Programs</h4>
+                    <p>Offer perks such as higher withdrawal limits, reduced wagering, exclusive bonuses, and personalised service. As you climb tiers, you unlock better conditions. These long-term benefits matter more to frequent players than one-time welcome offers.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-file-contract"></i> What Matters Most in Bonus Terms</h4>
+                    <p>Wagering requirements determine how realistic it is to clear a bonus. Game contribution rates determine which games contribute the most to wagering progression, with pokies typically offering 100% contribution. Maximum bet rules protect casinos from aggressive strategies, while expiry dates set a window for completing wagering.</p>
+                </div>
+            </div>
+            
+            <h3>Best for Bonus Picks</h3>
+            <p>Some Australian casinos stand out for their promotions, which offer real value rather than complicated terms or filler rewards. Below is a quick snapshot of which platforms perform best for bonuses, cashback, and ongoing offers.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Casino</th>
+                            <th>Bonus Strength</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>NeoSpin</td><td>Strong welcome package and weekly cashback</td></tr>
+                        <tr><td>VegasNow</td><td>Big match bonuses with steady reloads</td></tr>
+                        <tr><td>SkyCrown</td><td>Multi-stage welcome deal plus cashback</td></tr>
+                        <tr><td>SpinsUp</td><td>Solid welcome offer and frequent tournaments</td></tr>
+                        <tr><td>Wild Tokyo</td><td>Large 250% start-up bonus with ongoing promos</td></tr>
+                        <tr><td>MrPacho</td><td>Best for reloads, missions, and prize drops</td></tr>
+                        <tr><td>LuckyOnes</td><td>Very high-value welcome bonus for bigger deposits</td></tr>
+                        <tr><td>BetNinja</td><td>Flexible non-sticky bonus for casino and sports</td></tr>
+                        <tr><td>GoldenCrown</td><td>Huge first-deposit match and varied promos</td></tr>
+                        <tr><td>Rollero</td><td>Clear bonus terms with simple progression</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="content-section" id="games">
+            <h2>Best Australian Online Pokies & Real Money Games</h2>
+            <p>Online pokies are the main attraction for most Aussies, and offshore casinos offer far larger selections than anything found locally. These platforms feature thousands of real-money pokies, table games, instant-win titles, and live dealer streams, offering players far more variety than traditional venues. This section breaks down why pokies dominate the market and what types you'll see when playing at Australian-friendly casinos.</p>
+            
+            <h3>Why Australians Love Online Pokies</h3>
+            <p>Pokies have a long history in Australian pubs and clubs, and that familiarity has carried over to online gaming. Offshore casinos allow players to enjoy high-RTP pokies, bonus-buy features, and themed games that update weekly. Online versions load quickly, provide clearer payout information, and typically offer larger jackpots than land-based machines.</p>
+            
+            <h3>Types of Online Pokies Australia Players See</h3>
+            <p>A quick overview of the main pokie styles you'll find online and how they differ in gameplay and payout behavior.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-dice-three"></i> Classic 3-Reel Pokies</h4>
+                    <p>Simple layouts with clean gameplay, often designed for low-volatility sessions. Players who enjoy steady, smaller wins tend to gravitate toward these titles.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-dice-five"></i> Five-Reel Video Pokies</h4>
+                    <p>The most common category and the backbone of online casinos. These games include bonus rounds, wilds, multipliers, and themed designs.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-bolt"></i> Megaways & Cluster Pokies</h4>
+                    <p>These titles adjust the number of ways to win on every spin or replace paylines entirely. They appeal to players who enjoy bigger volatility and fast-moving gameplay.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-trophy"></i> Progressive Jackpots</h4>
+                    <p>These pokies pool wagers across multiple casinos, creating potentially massive top prizes. Despite the risk, they remain popular among jackpot chasers.</p>
+                </div>
+            </div>
+            
+            <p>Most pokies also display RTP (return-to-player) percentages and volatility levels, helping players choose titles that fit their play style.</p>
+            
+            <h3>Best Online Pokies Real Money Titles Right Now</h3>
+            <p>This table highlights some of the most popular real money pokies available to Australian players right now, showing their RTP, volatility, and why they perform well at AU-friendly casinos.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Pokie Name</th>
+                            <th>Provider</th>
+                            <th>RTP %</th>
+                            <th>Volatility</th>
+                            <th>Why It Suits Australian Players</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sugar Rush 1000</td><td>Pragmatic Play</td><td>~96%</td><td>High</td><td>Popular for its multipliers and strong hit potential</td></tr>
+                        <tr><td>Bonanza Billion</td><td>BGaming</td><td>~96%</td><td>Medium-High</td><td>Fast tumbles and bonus buys keep gameplay lively</td></tr>
+                        <tr><td>Gates of Olympus</td><td>Pragmatic Play</td><td>~96%</td><td>High</td><td>Known for big multiplier drops and bonus excitement</td></tr>
+                        <tr><td>Majestic Wolf</td><td>Spinomenal</td><td>~95%</td><td>Medium</td><td>Steady payouts with familiar mechanics</td></tr>
+                        <tr><td>Fortune Gems Megaways</td><td>Booming Games</td><td>~96%</td><td>High</td><td>Expanding reels appeal to Megaways fans</td></tr>
+                        <tr><td>Sunken Treasures</td><td>Various Providers</td><td>~95%</td><td>Medium</td><td>Strong visuals and frequent feature triggers</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-dice"></i> Other Popular Games at Australian Online Casino Sites</h4>
+                <p>Table games remain a close second to pokies. Players can explore blackjack, roulette, baccarat, and their many variants, including speed tables and VIP versions. Live dealer games add an interactive element, with real hosts streaming from professional studios. Crash games such as Aviator, Plinko, and multiplier-based instant games continue to gain traction among Australian players because of their simple rules and fast rounds. Video poker also maintains a loyal following thanks to its skill-based decision-making and predictable RTP.</p>
+            </div>
+        </section>
+
+        <!-- Banking Section -->
+        <section class="content-section" id="banking">
+            <h2>Banking at Australian Online Casinos: PayID, Cards & Crypto</h2>
+            <p>Fast, reliable payments are a significant priority for Aussies. Offshore casinos that accept Australians typically offer a wide range of banking options, from PayID to crypto, giving players greater flexibility than domestic platforms. This section explains how these methods work, what to expect, and how to get the quickest withdrawals.</p>
+            
+            <h3>Why Payments Matter for Australian Players</h3>
+            <p>Offshore casinos vary in payout speeds, and choosing the proper banking method can mean the difference between waiting minutes or days for withdrawals. Because Australian banks treat gambling transactions cautiously, players rely heavily on PayID, e-wallets, and cryptocurrency to ensure a smoother experience. Understanding these differences helps avoid delays or unnecessary fees.</p>
+            
+            <div class="highlight-box">
+                <h3>PayID at Australian Online Casinos</h3>
+                <p>PayID has become one of the most practical banking options for Australian online casino players. It links directly to your bank account using a simple identifier you already have, usually your mobile number or email address. That means no card numbers, no extra logins, and no third-party wallets to manage.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-question-circle"></i> What PayID is and why casinos use it</h4>
+                    <p>PayID is part of Australia's New Payments Platform (NPP). It allows real-time bank transfers between participating Australian banks, 24/7. For casinos, this solves two major issues at once. Deposits arrive instantly, and withdrawals can be processed far faster than traditional bank transfers.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-arrow-down"></i> How PayID deposits work at casinos</h4>
+                    <p>After creating an account at a casino that supports PayID, you head to the cashier and select PayID as your deposit method. The casino provides a PayID or reference, which you enter in your banking app. Once you confirm the payment, funds usually appear in your casino balance within seconds.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-arrow-up"></i> How PayID withdrawals work</h4>
+                    <p>Withdrawals follow a similar path but usually require account verification first. Once approved, you select PayID, enter your registered PayID details, and submit the request. Many casinos process PayID withdrawals within minutes to a few hours, making it one of the fastest AUD cash-out options available.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-shield-alt"></i> Security and privacy</h4>
+                    <p>Because PayID transactions happen inside your own banking app, casinos never see your full banking details. Payments are protected by bank-level encryption, real-time fraud monitoring, and your bank's existing security controls.</p>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-exclamation-triangle"></i> Things to keep in mind</h4>
+                <p>PayID supports only Australian dollars and participating banks. Availability varies by casino, and KYC checks remain standard before your first withdrawal. For speed, simplicity, and local banking trust, PayID remains one of the strongest payment options at Australian online casinos in 2025.</p>
+            </div>
+            
+            <h3>Other Banking Options</h3>
+            <p>A range of alternative payment methods is also available, each offering different speeds, fees, and levels of convenience for Aussies.</p>
+            
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <div class="payment-icon"><i class="fas fa-university"></i></div>
+                    <div>
+                        <h4>Bank Transfer and POLi / Instant Bank Pay</h4>
+                        <p>These methods link directly to your Australian bank account. Deposits are reliable, though withdrawals may take longer.</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="payment-icon"><i class="fas fa-credit-card"></i></div>
+                    <div>
+                        <h4>Visa, Mastercard, and Debit Cards</h4>
+                        <p>Cards are widely accepted for deposits but less reliable for withdrawals. They remain popular for beginners.</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="payment-icon"><i class="fas fa-wallet"></i></div>
+                    <div>
+                        <h4>E-Wallets</h4>
+                        <p>MiFinity, Skrill, Neteller offer fast deposits and withdrawals while keeping banking details separate from the casino.</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="payment-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <div>
+                        <h4>Prepaid Vouchers (Neosurf)</h4>
+                        <p>Neosurf vouchers are helpful for players who prefer not to share their bank details. Deposits are instant.</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="payment-icon"><i class="fas fa-coins"></i></div>
+                    <div>
+                        <h4>Cryptocurrency</h4>
+                        <p>Bitcoin, Ethereum, Tether, Litecoin, TRON. The fastest way to withdraw, avoids bank restrictions entirely.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-lightbulb"></i> How to Get Faster Payouts</h4>
+                <ul class="content-list">
+                    <li>Start by completing your verification early</li>
+                    <li>Stick to fast methods like PayID or crypto</li>
+                    <li>Avoid switching payment methods mid-session</li>
+                    <li>Review the casino's withdrawal rules before depositing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section class="content-section" id="safety">
+            <h2>Legality, Safety & Player Protection for Online Casinos in Australia</h2>
+            <p>Online casinos operate in a unique legal space in Australia. Because local operators are prohibited from offering online pokies or casino games, Australians turn to offshore platforms that legally accept them. Understanding how this system works helps players choose safer, more transparent sites rather than stumbling into unregulated options.</p>
+            
+            <h3>Is Online Casino Legal in Australia?</h3>
+            <p>The Interactive Gambling Act (IGA) bans Australian companies from running online casinos, but it does not make it illegal for individuals to play at licensed offshore sites. This means Australians can legally access international casinos, provided those casinos meet strict licensing and fairness standards in their respective jurisdictions.</p>
+            
+            <p>ACMA enforces the IGA by blocking illegal operators, requesting ISP blocks, and penalising companies that target Australian players with unauthorised advertising. These actions don't affect players directly but help filter out unsafe platforms.</p>
+            
+            <p>Because of this setup, Aussies have a wide range of real-money casinos, though it's important to avoid sites that operate without proper licensing or transparency.</p>
+            
+            <h3>How to Check if an Online Casino Is Safer for Australians</h3>
+            <p>A reliable offshore casino will list its licensing body, usually Curaçao or Malta, clearly in the footer. These regulators oversee gambling activity, dispute processes, and fair-play standards.</p>
+            
+            <p>The games themselves should come from known studios that use independently tested RNG software. A safe casino also provides:</p>
+            
+            <ul class="content-list">
+                <li>Clear terms and bonus rules</li>
+                <li>Transparent privacy and banking policies</li>
+                <li>Responsible gambling tools such as deposit limits, spend reminders, and self-exclusion options</li>
+            </ul>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-exclamation-triangle"></i> Warning: Advertising, Influencers & Social Media Risk</h4>
+                <p>Because offshore casinos cannot legally advertise directly in Australia, many rely on social media creators, tipster accounts, or unverified affiliates. ACMA has issued warnings and even takedowns in cases where influencers promoted unlicensed or high-risk sites. This is why players should treat recommendations on TikTok, Instagram, or Telegram with caution. The safest approach is always to verify licensing, payment options, and game providers independently.</p>
+            </div>
+            
+            <h3>Responsible Gambling & Help Services</h3>
+            <p>Staying safe online requires recognising issues early. Warning signs include chasing losses, increasing bet sizes under pressure, spending more than intended, or avoiding social activities to gamble.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-phone-alt"></i> Australian Support Services</h4>
+                    <ul class="content-list">
+                        <li><strong>Gambling Help Online:</strong> 24/7 national support with live chat</li>
+                        <li><strong>Gambler's Help:</strong> State-level counselling and phone lines</li>
+                        <li><strong>Self-exclusion programs:</strong> Betstop is available directly through most casino accounts</li>
+                        <li><strong>Financial counselling services:</strong> For players needing money management support</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-tools"></i> Casino Responsible Gambling Tools</h4>
+                    <ul class="content-list">
+                        <li>Deposit limits</li>
+                        <li>Session reminders</li>
+                        <li>Cooling-off periods</li>
+                        <li>Permanent self-exclusion</li>
+                    </ul>
+                    <p>Using these early ensures the experience remains enjoyable rather than stressful.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategies Section -->
+        <section class="content-section" id="strategies">
+            <h2>Strategies & Tips for Playing at the Best Online Casino Australia Sites</h2>
+            <p>Playing at top Australian-friendly casinos becomes far more enjoyable when you approach it with a clear plan. These simple strategies help extend your bankroll, reduce unnecessary risks, and keep each session fun rather than stressful.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-wallet"></i> Bankroll Basics</h4>
+                    <p>Decide on a fixed amount you're comfortable spending per session or week and stick to it. Splitting that amount into smaller bets helps you play longer without blowing through your balance too quickly. Treat your bankroll as entertainment money, not income.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-slot-machine"></i> Picking Better Online Pokies</h4>
+                    <p>Look for pokies with an RTP of 95% or higher. These titles return more value over time and are easier on your balance. Understanding volatility also helps: low-volatility pokies offer frequent small wins, while high-volatility titles deliver bigger hits but space them further apart. Try free demos first if the casino offers them.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-gift"></i> Smart Bonus Use</h4>
+                    <p>Focus on bonuses with low or moderate wagering requirements. High rollover can trap you into excessive play, while fair terms give you a better chance at withdrawing real money. Use bonuses on pokies that contribute 100% to wagering to progress faster.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-user-tie"></i> Table Game & Live Casino Tips</h4>
+                    <p>If you enjoy blackjack or roulette, consider learning the basic rules or strategy variations. Watching a few rounds before placing your first bet helps you understand table flow. Start at lower limits until you're comfortable.</p>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4><i class="fas fa-clock"></i> When to Take a Break</h4>
+                <p>Good sessions and bad sessions both happen, but the key is knowing when to pause. Signs like chasing losses, feeling irritated, or betting more than planned indicate it's time to step away. Casinos offer time-out tools for this exact purpose.</p>
+            </div>
+            
+            <h3>How the Best Online Casino Australia Sites Keep Games Fair</h3>
+            <p>Fairness is one of the most essential elements of online casino gaming. Because Australians rely on offshore casinos, understanding how these platforms protect game integrity helps players choose safer and more transparent sites.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4><i class="fas fa-random"></i> RNG & RTP</h4>
+                    <p>Every legitimate online casino uses a Random Number Generator (RNG) to ensure outcomes can't be predicted or manipulated. The RNG produces unpredictable results for each spin or deal, keeping gameplay fair. RTP (return-to-player) percentages indicate how much a game pays back over the long term.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <h4><i class="fas fa-search"></i> Third-Party Audits</h4>
+                    <p>Reputable casinos partner with independent testing agencies such as eCOGRA, GLI, and iTech Labs. These auditors check the RNG software, verify payouts, and confirm games match their advertised RTP. When you see a certification seal from one of these labs, it's a sign the site has undergone ongoing monitoring.</p>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4><i class="fas fa-user-check"></i> Your Own Checks</h4>
+                <p>Players can also take simple steps to stay informed. Check the game's information screen to confirm RTP and volatility. Avoid titles with unclear rules or sudden changes in bet structure. If a casino removes provider names, hides its game catalogue until login, or offers unusually high payouts without verification, those are red flags.</p>
+                <p>Fair games rely on three factors: certified software, reputable auditing, and transparent information. If all three are present, you can feel confident the spins and results aren't rigged.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Final Thought</h3>
+                <p>Choosing the best online casino in Australia comes down to what matters most to you. Some players want fast PayID withdrawals, others wish for large pokies libraries, and many look for substantial bonuses or consistent cashback. The casinos reviewed here address each of those preferences, but safety should remain the top priority.</p>
+                <p>Look for licensing, fair-play providers, clear terms, and responsible gambling tools before depositing. Treat online gaming as entertainment, not income. Compare options, understand wagering rules, choose games with fair RTP, and set limits you're comfortable with. If gambling ever stops being fun, support services like Gambling Help Online are always available.</p>
+                <p>With the right approach, Australian players can enjoy a safer, more informed real-money experience across these trusted offshore casinos.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">What is the best online casino in Australia?</div>
+                <p>It depends on your playing style. Some casinos offer faster withdrawals, others provide bigger bonuses or more pokies. The best pick is the one that balances safety, fair terms, and the features you value most.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is online casino gambling legal in Australia?</div>
+                <p>Local companies can't run online casinos under the Interactive Gambling Act, but Australians can legally play at licensed offshore sites. Regulators like ACMA focus on blocking unsafe operators, not individual players.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What's the fastest way to deposit and withdraw?</div>
+                <p>PayID is usually the quickest for both deposits and withdrawals. Crypto is also fast for cashouts, often processing within minutes once approved.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What games can I play online?</div>
+                <p>You can access pokies, blackjack, roulette, baccarat, video poker, crash games, and full live dealer tables. Offshore casinos offer far more variety than local venues.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How can I tell if a casino is safe?</div>
+                <p>Check for proper licensing, transparent terms, reputable game providers, encryption, and responsive customer support. Sites with RNG certification and clear privacy policies are generally more trustworthy.</p>
+            </div>
+            
+            <h3>Research Sources</h3>
+            <ul class="content-list">
+                <li><strong>IGA 2001</strong> – Interactive Gambling Act 2001 overview (online casino prohibition)</li>
+                <li><strong>ACMA</strong> – Online gambling compliance and investigations (illegal offshore sites, enforcement)</li>
+                <li><strong>Parliament of Australia</strong> – Online gambling inquiry summary (IGA bans most online casino gaming)</li>
+                <li><strong>National Australia Bank</strong> – How PayID works for Aussies</li>
+                <li><strong>Gambling Help Online (24/7 national support)</strong></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>AussieCasinoGuide</h4>
+                    <p>Your comprehensive resource for Australian online casino information, reviews, and guides since 2020.</p>
+                    <p>We provide unbiased information to help Australian players make informed decisions.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home - Top Casinos</a></li>
+                        <li><a href="reviews.html"><i class="fas fa-chevron-right"></i> Detailed Reviews</a></li>
+                        <li><a href="#bonuses"><i class="fas fa-chevron-right"></i> Casino Bonuses</a></li>
+                        <li><a href="#games"><i class="fas fa-chevron-right"></i> Online Pokies</a></li>
+                        <li><a href="#banking"><i class="fas fa-chevron-right"></i> Banking Methods</a></li>
+                        <li><a href="#safety"><i class="fas fa-chevron-right"></i> Safety Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Responsible Gambling</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.gamblinghelponline.org.au/" target="_blank"><i class="fas fa-external-link-alt"></i> Gambling Help Online</a></li>
+                        <li><a href="https://www.responsiblegambling.vic.gov.au/" target="_blank"><i class="fas fa-external-link-alt"></i> Responsible Gambling Vic</a></li>
+                        <li><a href="https://www.moneysmart.gov.au/gambling" target="_blank"><i class="fas fa-external-link-alt"></i> MoneySmart Gambling Guide</a></li>
+                        <li><a href="https://www.betstop.gov.au/" target="_blank"><i class="fas fa-external-link-alt"></i> National Self-Exclusion</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> Gambling involves risk. Please only gamble with funds you can afford to lose. The information on this site is for educational purposes only. Online gambling may not be legal in your jurisdiction; please check local laws. Must be 18+ to participate.</p>
+                <p style="margin-top: 1rem;">&copy; 2025 AussieCasinoGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            setupMobileMenu();
+            setupBackToTop();
+            setupQuickNavigation();
+        });
+
+        // Mobile menu functionality
+        function setupMobileMenu() {
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const nav = document.getElementById('mainNav');
+            
+            menuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                nav.classList.toggle('active');
+                
+                // Close menu when clicking on a link
+                if (nav.classList.contains('active')) {
+                    const navLinks = nav.querySelectorAll('a');
+                    navLinks.forEach(link => {
+                        link.addEventListener('click', function() {
+                            menuBtn.classList.remove('active');
+                            nav.classList.remove('active');
+                        });
+                    });
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!menuBtn.contains(event.target) && !nav.contains(event.target) && nav.classList.contains('active')) {
+                    menuBtn.classList.remove('active');
+                    nav.classList.remove('active');
+                }
+            });
+        }
+
+        // Quick navigation functionality
+        function setupQuickNavigation() {
+            const quickNavBtns = document.querySelectorAll('.quick-nav-btn');
+            const quickNav = document.getElementById('quickNav');
+            
+            // Update active button on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('.content-section');
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 150;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                        currentSection = '#' + section.id;
+                    }
+                });
+                
+                quickNavBtns.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-target') === currentSection) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Show/hide back to top button
+                const backToTopBtn = document.getElementById('backToTop');
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            // Add click handlers for quick navigation
+            quickNavBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Update active button
+                        quickNavBtns.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Scroll to section
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Back to top button
+        function setupBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                // Skip if it's an external link
+                if (href === '#' || href.startsWith('#') === false) return;
+                
+                e.preventDefault();
+                
+                const targetId = href;
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const menuBtn = document.getElementById('mobileMenuBtn');
+                    const nav = document.getElementById('mainNav');
+                    
+                    if (nav.classList.contains('active')) {
+                        menuBtn.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                    
+                    // Update active quick nav button
+                    const quickNavBtns = document.querySelectorAll('.quick-nav-btn');
+                    quickNavBtns.forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.getAttribute('data-target') === targetId) {
+                            btn.classList.add('active');
+                        }
+                    });
+                    
+                    // Scroll to element
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
